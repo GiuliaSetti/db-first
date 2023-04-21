@@ -1,0 +1,20 @@
+Modellizzare la struttura di una tabella per memorizzare tutti i dati riguardanti delle auto usate messe in vendita da un concessionario.
+
+ID - SMALLINT - Primary Key, AUTO_INCREMENT, UNIQUE, NOT_NULL
+plate - VARCHAR(7) - UNIQUE, NOT_NULL
+brand - VARCHAR(50) - NOT_NULL
+model - VARCHAR(50) - NOT_NULL
+km - MEDIUMINT - NOT_NULL, DEFAULT(0)
+n_doors - TINYINT - NOT_NULL, DEFAULT(3)
+n_seats - TINYINT - NOT_NULL
+gear - VARCHAR(15) - NOT_NULL
+color - VARCHAR(15) - NOT_NULL
+n_airbag - TINYINT - NOT_NULL
+air_conditioning - BOOLEAN - NULL
+power/horsepower - SMALLINT - NOT_NULL  
+date_of_registration - DATE - NOT_NULL, DEFAULT(year_of_production)
+year_of_production - DATE - NOT_NULL
+previous_owners - TINYINT - NULL, DEFAULT (1)
+original_price - FLOAT (8,2) - NULL
+selling_price - FLOAT (8,2) - NOT_NULL
+description - TEXT - NULL
